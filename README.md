@@ -4,6 +4,7 @@ Pocket-ImAT
 Pocket Image Analysis Tools
 
 Version: 1.0
+
 License: MIT
 
 For License/Copying information check COPYING file.
