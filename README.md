@@ -7,7 +7,7 @@ Version: 1.0
 
 License: MIT
 
-For License/Copying information check COPYING file.
+For License/Copying information check LICENSE file.
 
 Program that aims to bring a set of features to help you analyzing images.
 
