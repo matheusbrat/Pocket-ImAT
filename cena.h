@@ -29,7 +29,7 @@ class Cena : public QGraphicsScene
     Q_OBJECT
 public:
     explicit Cena(QObject *parent = 0);
-    void mousePressionado(qreal, qreal);
+    void mouseClicked(qreal, qreal);
     void keyPressEvent(QKeyEvent *);
     QStack<Drawable *>  * getLines();
     void setUseCircledLine(bool);

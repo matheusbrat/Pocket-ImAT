@@ -85,7 +85,7 @@ void Cena::addObj(int t, float x, float y, float x1, float y1, QPen p) {
     }
 }
 
-void Cena::mousePressionado(qreal x, qreal y) {
+void Cena::mouseClicked(qreal x, qreal y) {
     if(x1 == 0 && y1 == 0) {
         this->x1 = x;
         this->y1 = y;
@@ -139,7 +139,7 @@ void Cena::mousePressEvent(QGraphicsSceneMouseEvent* event) {
         if(tempLine)
             tempLine->hide();
     } else {
-        mousePressionado(event->scenePos().x(), event->scenePos().y());
+        mouseClicked(event->scenePos().x(), event->scenePos().y());
     }
     QGraphicsScene::mousePressEvent(event);
 

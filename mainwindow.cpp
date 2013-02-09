@@ -60,7 +60,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     locale = QLocale(settings.value("Language", QLocale(QLocale::English, QLocale::UnitedStates)).toLocale());
     locale.setNumberOptions(QLocale::OmitGroupSeparator);
-    qDebug() << locale.country() << settings.value("useCircledLine", false).toBool();
     if(locale.country() == QLocale::UnitedStates) {
         ui->actionEnglish_US->setChecked(true);
         ui->actionPortuguese_BR->setChecked(false);
@@ -218,9 +217,7 @@ void MainWindow::on_actionOpen_triggered()
 
         while(!in.atEnd()) {
             line = in.readLine();
-            qDebug() << "OI";
             QStringList fields = line.split(csvSeparator);
-            qDebug() << "Tchau";
             if(fields.size() > 1) {
                 float x = locale.toFloat(fields.at(2));
                 float y = locale.toFloat(fields.at(3));
